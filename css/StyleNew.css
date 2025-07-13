@@ -1,0 +1,998 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fontfamily: 'Source Sans Pro', sans-serif;
+    --white__color: #fff;
+    --mainText__color: #555;
+    --mainTitle__color: #333;
+    --secondText__color: #ff305b;
+    --secondBG__color: #f1f1f1;
+    --black__color: #000;
+    --location__color: #777;
+    --rate__color: gold;
+    --titleBG__color: rgba(222, 227, 228, 0.5);
+    --number__color: #6c757d;
+    --secondButton__color: #6c6c6c;
+    --secondNav__color: #7b8084;
+    --placeholder__color: #b1b4b8;
+}
+
+
+
+body{
+    height: 4800px;
+    font-family: var(--fontfamily);
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: var(--mainTitle__color);
+    position: fixed;
+    z-index: 99;
+}
+
+.NavWholeContent{
+    width: 88%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+header{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/homepage.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin-bottom: 100px;
+}
+
+
+.NavWholeContent h3{
+    width: 50%;
+    float: left;
+    font-size: 24px;
+    cursor: default;
+    color: var(--secondText__color);
+}
+
+ul{
+    width: 50%;
+    float: left;
+}
+
+ul li{
+    width: fit-content;
+    float: left;
+    color: var(--white__color);
+    text-decoration: none;
+    list-style: none;
+    margin-right: 38px;
+    margin-top: 5px;
+    transition: all 0.5s;
+}
+
+li:hover{
+    color: var(--secondText__color);
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text h3{
+    color: var(--white__color);
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.text h1{
+    color: var(--secondText__color);
+    font-size: 70px;
+}
+
+.text h4{
+    color: var(--white__color);
+    font-size: 24px;
+    position: relative;
+    padding-left: 65px;
+    padding-top: 10px;
+}
+
+.text h4::after{
+    content: "";
+    position: absolute;
+    animation-name: typing;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0%{
+        content: "|";
+    }
+    1%{
+        content: "p|";
+    }
+    2%{
+        content: "pr|";
+    }
+    3%{
+        content: "pro|";
+    }
+    4%{
+        content: "prof|";
+    }
+    5%{
+        content: "profe|";
+    }
+    6%{
+        content: "profes|";
+    }
+    7%{
+        content: "profess|";
+    }
+    8%{
+        content: "professi|";
+    }
+    9%{
+        content: "professio|";
+    }
+    10%{
+        content: "profession|";
+    }
+    11%{
+        content: "professiona|";
+    }
+    12%{
+        content: "professional|";
+    }
+    13%{
+        content: "professional |";
+    }
+    14%{
+        content: "professional W|";
+    }
+    15%{
+        content: "professional We|";
+    }
+    16%{
+        content: "professional Web|";
+    }
+    17%{
+        content: "professional Web |";
+    }
+    18%{
+        content: "professional Web D|";
+    }
+    19%{
+        content: "professional Web De|";
+    }
+    20%{
+        content: "professional Web Des|";
+    }
+    21%{
+        content: "professional Web Desi|";
+    }
+    22%{
+        content: "professional Web Desig|";
+    }
+    23%{
+        content: "professional Web Design|";
+    }
+    24%{
+        content: "professional Web Designe|";
+    }
+    25%{
+        content: "professional Web Designer|";
+    }
+    26%{
+        content: "professional Web Designer |";
+    }
+    30%{
+        content: "professional Web Designer|";
+    }
+    31%{
+        content: "professional Web Designe|";
+    }
+    32%{
+        content: "professional Web Design|";
+    }
+    33%{
+        content: "professional Web Desig|";
+    }
+    34%{
+        content: "professional Web Desi|";
+    }
+    35%{
+        content: "professional Web Des|";
+    }
+    36%{
+        content: "professional Web De|";
+    }
+    37%{
+        content: "professional Web Dev|";
+    }
+    38%{
+        content: "professional Web Deve|";
+    }
+    39%{
+        content: "professional Web Devel|";
+    }
+    40%{
+        content: "professional Web Develo|";
+    }
+    41%{
+        content: "professional Web Develop|";
+    }
+    42%{
+        content: "professional Web Develope|";
+    }
+    43%{
+        content: "professional Web Developer|";
+    }
+}
+
+.ProfileWholeContent{
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    position: relative;
+}
+
+.ProfileWholeContent .profileImage{
+    width: 400px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ProfileWholeContent .profileImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.ProfileWholeContent .ProfileContent{
+    width: 760px;
+    height: 400px;
+    position: absolute;
+    left: 34%;
+    top: 20px;
+}
+
+.ProfileWholeContent .ProfileContent h2{
+    font-size: 24px;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+}
+
+.ProfileWholeContent .ProfileContent p{
+    font-size: 16px;
+    color: #877778;
+}
+
+span{
+    color: var(--secondText__color);
+}
+
+.ProfileWholeContent .ProfileContent .line{
+    border-top: 1px dotted #4e4e4e; 
+    width: 760px; 
+    margin-top: 19px;
+}
+
+.ProfileWholeContent .ProfileContent .LeftContent b{
+    color: var(--black__color);
+    font-size: 14px;
+}
+.ProfileWholeContent .ProfileContent .LeftContent{
+    color: var(--black__color);
+    font-size: 14px;
+    float: left;
+    margin-top: 19px;
+    line-height: 20px;
+}
+.ProfileWholeContent .ProfileContent .RightContent{
+    color: var(--black__color);
+    font-size: 14px;
+    float: left;
+    margin-left: 30%;
+    margin-top: 19px;
+    line-height: 20px;
+}
+
+.ProfileWholeContent .ProfileContent .LeftContent p{
+    font-size: 14px;
+}
+
+.ProfileWholeContent .ProfileContent .RightContent b{
+    color: var(--black__color);
+    font-size: 14px;
+}
+
+.ProfileWholeContent .ProfileContent .RightContent p{
+    font-size: 14px;
+}
+
+.ProfileWholeContent .ProfileContent .Button{
+    margin-top: 13%;
+}
+
+.ProfileWholeContent .ProfileContent .Button a{
+    text-decoration: none;
+    color: var(--white__color);
+    padding: 1rem
+}
+
+.ProfileWholeContent .ProfileContent .Button .button1,
+.ProfileWholeContent .ProfileContent .Button .button2 {
+    color: var(--white__color);
+    float: left;
+    margin-right: 40px;
+    height: 40px;
+    background-color: var(--secondText__color);
+    line-height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+    transition: background-color 0.5s;
+}
+
+.ProfileWholeContent .ProfileContent .Button .button1:hover,
+.ProfileWholeContent .ProfileContent .Button .button2:hover {
+    background-color: red;
+}
+
+.ProfileWholeContent .ProfileContent .Button{
+    margin-top: 13%;
+}
+
+.profileImage .layer{
+    background-color: var(--secondButton__color);
+    height: 100%;
+    position: relative;
+    opacity: 0.7;
+    transition: transform 1s;
+}
+
+.profileImage:hover .layer{
+    transform: translateY(-100%);
+}
+
+.profileImage .layer .logos{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.profileImage .layer .logos i{
+    padding-right: 10px;
+    font-size: 20px;
+    color: var(--white__color);
+    transition: color 0.5s;
+}
+
+.profileImage .layer .logos i:hover{
+    color: red;
+}
+
+#ThirdSection{
+    background-color: #f1f1f1;
+    height: 550px;
+    margin-top: 100px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 75px;
+    height: 100%;
+}
+
+.h3-formula{
+    position: relative;
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.h3-formula::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 35%;   
+    background-color: red;
+    top: 115%;
+    left: 32%;
+}
+
+.h3-formula .line2{
+    height: 2px;
+    width: 70%;
+    background-color: red;
+    position: absolute;
+    top: 123%;
+    left: 15%;
+}
+
+.h3-formula .line3{
+    height: 1px;
+    width: 35%;
+    background-color: red;
+    position: absolute;
+    top: 133%;
+    left: 32%;
+}
+
+#ThirdSection{
+    margin-bottom: 60px;
+}
+
+#ThirdSection .contents{
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+    font-family: 'Source Sans Pro', "Roboto", sans-serif;
+}
+
+.contents .firstcontent , .secondcontent , .thirdcontent , .fourthcontent{
+    width: calc(100%/4.1);
+    float: left;
+    text-align: center;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    margin-right: 3px;
+    transition: all 0.5s
+}
+
+.contents i{
+    font-size: 30px;
+    color: #ff305b;
+    padding-bottom: 20px;
+    transition: 0.8s;
+}
+
+.contents .txt h5{
+    font-size: 1.3rem; 
+    font-weight: 700;
+}
+
+.contents .txt p{
+    color: #585858;
+    padding: 3px;
+}
+
+.clr{
+    clear: both;
+}
+
+.contents .firstcontent:hover,
+.contents .secondcontent:hover,
+.contents .thirdcontent:hover,
+.contents .fourthcontent:hover {
+    background-color: white;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.contents .firstcontent:hover .Logo i,
+.contents .secondcontent:hover .Logo i,
+.contents .thirdcontent:hover .Logo i,
+.contents .fourthcontent:hover .Logo i {
+    transform: scale(1.4);
+}
+
+#FourthSection{
+    height: 900px;
+}
+
+#FourthSection .PortfolioContainer{
+    height: 100%;
+    margin: auto;
+}
+
+.title{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    height: 30px;
+}
+
+.title p{
+    float: left;
+    padding-right: 28px;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.PortfolioImages .cards{
+    width: 84%;
+    margin: auto;
+    margin-top: 65px;
+    width: calc(100%3);
+}
+
+.cards .card {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+.PortfolioImages .cards img{
+    padding: 8px;
+    width: 400px;
+    height: 300px;
+}
+
+.cards .card .Layer
+{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1.4s;
+}
+
+.cards .card .Layer i{
+    font-size: 25px;
+    transform: translate(355px , 250px);
+    color: var(--secondText__color);
+}
+
+.cards .card:hover .Layer {
+    opacity: 1;
+}
+
+.PortfolioTail{
+    background-color: #f1f1f1;
+    height: 280px;
+    margin-top: 90px;
+}
+
+.PortfolioTail .PortfolioTailContents{
+    width: 90%;
+    margin: auto;
+}
+
+.PortfolioTail .PortfolioTailContents .TailContent{
+    width: calc(100%/4);
+    float: left;
+    text-align: center;
+    transform: translateY(85%);
+    padding-bottom: 10px;
+    line-height: 35px;
+}
+
+.PortfolioTail .PortfolioTailContents .TailContent i{
+    color: #ff305b;
+    font-size: 30px;
+}
+.PortfolioTail .PortfolioTailContents .TailContent h3{
+    font-size: 22px;
+}
+
+.PortfolioTail .PortfolioTailContents .TailContent p{
+    color: #555555;
+}
+
+#FifthSection{
+    background-color: var(--secondBG__color);
+    height: 700px;
+}
+
+.BlogContainer{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+#FifthSection .BlogContainer .h3-formula{
+    margin-top: 360px;
+    transform: translateY(70px);
+    margin-bottom: 160px;
+}
+
+.BlogContainer .ContanerBox{
+    width: 380px;
+    height: 400px;
+    background-color: white;
+}
+
+.BlogContainer .ContanerBox .BoxImage{
+    width: 380px;
+    height: 192px;
+}
+
+.BlogContainer .ContanerBox .BoxImage img , iframe{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    
+}
+
+.ContanerBox{
+    width: 380px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 49px;
+    border-radius: 4px;
+}
+
+.ContanerBox .BoxText{
+    width: 340px;
+    height: 205px;
+    margin: auto;
+    line-height: 23px;
+    cursor: default;
+}
+
+.ContanerBox .BoxText p{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: var(--mainTitle__color);
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+.ContanerBox .BoxText a{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    transition: 0.5s;
+    
+}
+
+#anker{
+    font-size: 14px;
+}
+
+.BoxText a span i{
+    color: black;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.ContanerBox .BoxText span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 105%;
+}
+
+.ContanerBox .BoxText a:hover,
+.ContanerBox .BoxText a:hover i {
+    color: #ff305b;
+}
+
+#LastSection .ContactUsContainer .h3-formula{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.ContactUsContainer{
+    width: 65%;
+    height: 600px;
+    margin: auto;
+}
+
+.ContactUsContainer .FirstRow .inputbox{
+    width: 49.5%;
+    height: 35px;
+    display: inline-block;
+    margin-right: 0.2%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.ContactUsContainer .SecondRow .inputbox{
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.ContactUsContainer .ThirdRow .inputbox{
+    width: 100%;
+    height: 130px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.ContactUsContainer .ThirdRow .inputbox textarea{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    padding-left: 7px;
+    padding-top: 5px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    border-color: #e9e9e9;
+    padding-left: 7px;
+}
+
+.ContactUsContainer .Button button{
+    padding: 8px;
+    color: white;
+    background-color: #ff305b;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: hidden;
+    border-radius: 4px;
+}
+
+.ContactUsContainer .Button button:hover{
+    background-color: red;
+}
+
+textarea::placeholder {
+    font-family: "Roboto", sans-serif;
+}
+
+form{
+    margin-left: 1.75%;
+    margin-right: 1.75%;
+}
+
+.foot{
+    background-color: var(--mainTitle__color);
+    height: 170px;
+}
+
+.footcontent{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(100%);
+}
+
+.foot .footcontent .logos i{
+    font-size: 20px;
+    padding-right: 17px;
+    color: white;
+    padding-bottom: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.foot .footcontent .Ftext p{
+    font-size: 16px;
+    color: white
+}
+
+.foot .footcontent .logos i:hover{
+    color: #ff305b;
+}
+
+.footcontent .Ftext p span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    /* For large laptops/desktops */
+    .ProfileWholeContent .ProfileContent {
+        width: 650px;
+        left: 38%;
+    }
+    
+    .cards .card {
+        width: 350px;
+        height: 250px;
+    }
+    
+    .cards .card img {
+        width: 350px;
+        height: 250px;
+    }
+    
+    .cards .card .Layer {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* For tablets/laptops */
+    .ProfileWholeContent {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .ProfileWholeContent .profileImage {
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .ProfileWholeContent .ProfileContent {
+        width: 100%;
+        position: static;
+        float: none;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+    
+    .ProfileWholeContent .ProfileContent .line {
+        width: 100%;
+    }
+    
+    .contents .firstcontent, 
+    .contents .secondcontent, 
+    .contents .thirdcontent, 
+    .contents .fourthcontent {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    
+    .PortfolioTail .PortfolioTailContents .TailContent {
+        width: 48%;
+        margin-bottom: 20px;
+        transform: translateY(40%);
+    }
+    
+    .BlogContainer .ContanerBox {
+        width: 45%;
+        margin: 2.5%;
+    }
+    
+    .BlogContainer .ContanerBox .BoxImage,
+    .BlogContainer .ContanerBox .BoxImage img,
+    .BlogContainer .ContanerBox .BoxImage iframe {
+        width: 100%;
+    }
+    
+    .ContactUsContainer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For smaller tablets */
+    nav ul {
+        display: none;
+    }
+    
+    .text h1 {
+        font-size: 50px;
+    }
+    
+    .ProfileWholeContent .ProfileContent .RightContent {
+        margin-left: 0;
+        float: none;
+        margin-top: 10px;
+    }
+    
+    .contents .firstcontent, 
+    .contents .secondcontent, 
+    .contents .thirdcontent, 
+    .contents .fourthcontent {
+        width: 100%;
+    }
+    
+    .title {
+        width: 100%;
+    }
+    
+    .title p {
+        padding: 0 10px;
+    }
+    
+    .cards .card {
+        width: 100%;
+        height: auto;
+    }
+    
+    .cards .card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .cards .card .Layer {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .PortfolioTail {
+        height: auto;
+        padding: 30px 0;
+    }
+    
+    .PortfolioTail .PortfolioTailContents .TailContent {
+        width: 100%;
+        transform: none;
+        margin-bottom: 30px;
+    }
+    
+    #FifthSection {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .BlogContainer .ContanerBox {
+        width: 90%;
+        margin: 5%;
+    }
+    
+    .footcontent {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* For mobile phones */
+    .text h1 {
+        font-size: 40px;
+    }
+    
+    .text h3, .text h4 {
+        font-size: 18px;
+    }
+    
+    .ProfileWholeContent .profileImage {
+        width: 250px;
+        height: 350px;
+    }
+    
+    .ProfileWholeContent .ProfileContent .Button .button1,
+    .ProfileWholeContent .ProfileContent .Button .button2 {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .ContactUsContainer .FirstRow .inputbox {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .ContactUsContainer {
+        width: 95%;
+    }
+    
+    .footcontent {
+        width: 95%;
+    }
+}
+
+/* Additional Mobile Optimization */
+@media (max-width: 400px) {
+    .text h1 {
+        font-size: 30px;
+    }
+    
+    .ProfileWholeContent .profileImage {
+        width: 200px;
+        height: 300px;
+    }
+    
+    .title p {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+}
